@@ -52,6 +52,7 @@ Included in V1
 - Distance sensing
 - Fault handling logic
 - Clean wiring and documentation
+
 Not included in V1
 - Camera
 - Autonomous driving
@@ -69,6 +70,7 @@ Motor Control
 - Right turn
 - Stop
 - PWM speed control
+
 Telemetry
 - Battery voltage (and voltage sag)
 - Current draw (incl. motor inrush)
