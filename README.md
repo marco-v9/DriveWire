@@ -5,6 +5,13 @@ DriveWire V1 is a scaled down electric‑vehicle (EV) platform built to explore 
 
 The project started from the need to rapidly prototype and test EV subsystems. A small chassis makes it easy to experiment with sensors, motor controllers and wireless communication without the cost and complexity of a full‑size vehicle. DriveWire V1 demonstrates how to integrate mechanical and electrical components, write embedded C++ firmware and configure a PlatformIO project.
 
+## V1 Architecture
+<p align="center">
+  <img src="images/HighLevelDriveWire.png" width="900">
+</p>
+
+High-level architecture of the DriveWire V1 platform.
+
 ## Features
 
 - Wireless telemetry: The ESP32‑S3 microcontroller streams sensor data over Wi‑Fi or serial, allowing live monitoring of speed, battery voltage and other parameters.
@@ -24,3 +31,5 @@ The project started from the need to rapidly prototype and test EV subsystems. A
 | USB Power Bank | ESP32 power source |
 | Chassis Kit | Mechanical platform |
 | Misc Sensors | Current, voltage, distance sensing |
+
+
