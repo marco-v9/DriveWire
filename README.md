@@ -7,7 +7,7 @@ The project started from the need to rapidly prototype and test EV subsystems. A
 
 ## V1 Architecture
 <p align="center">
-  <img src="Images/HighLevelDriveWire.png" width="900">
+  <img src="Images/HighLevelDriveWire.png" width="700">
 </p>
 
 High-level architecture of the DriveWire V1 platform.
