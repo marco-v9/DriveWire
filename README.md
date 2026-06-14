@@ -1,7 +1,7 @@
 # DriveWire
-## Overview
+## Wireless Mini EV Telemetry Platform
 
-DriveWire V1 is a scaled down electric‑vehicle (EV) platform built to explore wireless telemetry, embedded firmware, and mechanical design. The goal is to create a self‑contained test bed that can collect vehicle data and transmit it wirelessly to a ground station for analysis. This repository contains both the hardware notes and the firmware for an ESP32‑S3 microcontroller that powers the vehicle’s on‑board electronics.
+DriveWire V1 is a scaled down electric‑vehicle (EV) platform built to explore wireless telemetry, embedded firmware, and mechanical design. The goal is to create a self‑contained test bed that can collect vehicle data and transmit it wirelessly to a ground station for analysis in real time over WiFi. This repository contains both the hardware notes and the firmware for an ESP32‑S3 microcontroller that powers the vehicle’s on‑board electronics.
 
 The project started from the need to rapidly prototype and test EV subsystems. A small chassis makes it easy to experiment with sensors, motor controllers and wireless communication without the cost and complexity of a full‑size vehicle. DriveWire V1 demonstrates how to integrate mechanical and electrical components, write embedded C++ firmware and configure a PlatformIO project.
 
