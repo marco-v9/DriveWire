@@ -81,7 +81,7 @@ Telemetry
 - Fault state
 - Fault Handling
 
-DriveWire includes a basic embedded fault state machine.
+### DriveWire includes a basic embedded fault state machine.
 
 Planned states:
 
@@ -93,7 +93,7 @@ FAULT
 
 SAFE_SHUTDOWN
 
-Example fault conditions:
+### Example fault conditions:
 
 Low battery voltage
 
@@ -102,4 +102,5 @@ Overcurrent event
 Communication timeout
 
 Emergency stop
+
 Invalid control command
