@@ -86,14 +86,20 @@ DriveWire includes a basic embedded fault state machine.
 Planned states:
 
 NORMAL
+
 WARNING
+
 FAULT
+
 SAFE_SHUTDOWN
 
 Example fault conditions:
 
 Low battery voltage
+
 Overcurrent event
+
 Communication timeout
+
 Emergency stop
 Invalid control command
