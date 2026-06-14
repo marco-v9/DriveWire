@@ -13,11 +13,11 @@ The project started from the need to rapidly prototype and test EV subsystems. A
 - Test scaffolding: A test directory is included for future unit tests using PlatformIO’s built‑in testing framework.
 - Cross‑platform build: The platformio.ini file targets the esp32‑s3‑devkitc‑1 board with configurable upload and monitor ports.
 
-## Hardware
+## Hardware (V1)
 
 | Component | Purpose |
 |------------|------------|
-| ESP32-S3 DevKitC-1 | Main microcontroller |
+| ESP32-S3 DevKitC-1 N8R8 | Main microcontroller |
 | TB6612FNG Motor Driver | Controls left and right motors |
 | 2x DC Gear Motors | Vehicle propulsion |
 | 4x AA Battery Pack | Motor power source |
