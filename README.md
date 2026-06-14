@@ -32,4 +32,10 @@ High-level architecture of the DriveWire V1 platform.
 | Chassis Kit | Mechanical platform |
 | Misc Sensors | Current, voltage, distance sensing |
 
+<p align="center">
+  <img src="Images/Components.jpg" width="700">
+</p>
+
+Components for the inital V1 build (exluding tools). 
+
 
