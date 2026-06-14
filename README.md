@@ -23,3 +23,4 @@ The project started from the need to rapidly prototype and test EV subsystems. A
 | 4x AA Battery Pack | Motor power source |
 | USB Power Bank | ESP32 power source |
 | Chassis Kit | Mechanical platform |
+| Misc Sensors | Current, voltage, distance sensing |
