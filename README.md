@@ -41,7 +41,7 @@ Some components for the inital V1 build (exluding tools).
 ## Current V1 Scope
 The first version focuses on building a reliable 2WD rover with phone/browser control and basic telemetry.
 
-Included in V1
+### Included in V1
 - ESP32-S3 microcontroller
 - Dual DC motor control
 - PWM speed control
@@ -53,17 +53,16 @@ Included in V1
 - Fault handling logic
 - Clean wiring and documentation
 
-Not included in V1
+### Potential V2 Upgrades
 - Camera
 - Autonomous driving
 - BLDC motor control
 - Custom PCB
 
-Those may be explored in later versions after the first prototype works reliably.
 
 ## Software Features
 
-Motor Control
+### Motor Control
 - Forward
 - Reverse
 - Left turn
@@ -71,7 +70,7 @@ Motor Control
 - Stop
 - PWM speed control
 
-Telemetry
+### Telemetry
 - Battery voltage (and voltage sag)
 - Current draw (incl. motor inrush)
 - Estimated power
