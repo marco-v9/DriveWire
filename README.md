@@ -14,7 +14,7 @@ High-level architecture of the DriveWire V1 platform.
 
 ## Features
 
-- Wireless telemetry: The ESP32‑S3 microcontroller streams sensor data over Wi‑Fi or serial, allowing live monitoring of speed, battery voltage and other parameters.
+- Wireless telemetry: The ESP32‑S3 microcontroller streams sensor data over Wi‑Fi or serial, allowing live monitoring of speed, battery voltage, voltage sag, motor inrush and current draw, estimated power, acceleration, distance, and other parameters.
 - Mini EV chassis: Two DC motors mounted to the chassis provide propulsion. A rear hammer caster and code wheels for velocimetry complete the drivetrain assembly.
 - Modular firmware: The code is structured as a PlatformIO project with separate src and include directories. It uses the Arduino framework for rapid development.
 - Test scaffolding: A test directory is included for future unit tests using PlatformIO’s built‑in testing framework.
@@ -38,4 +38,60 @@ High-level architecture of the DriveWire V1 platform.
 
 Some components for the inital V1 build (exluding tools). 
 
+## Current V1 Scope
+The first version focuses on building a reliable 2WD rover with phone/browser control and basic telemetry.
 
+Included in V1
+- ESP32-S3 microcontroller
+- Dual DC motor control
+- PWM speed control
+- Wi-Fi-based control interface
+- Battery voltage monitoring
+- Current sensing
+- Estimated power calculation
+- Distance sensing
+- Fault handling logic
+- Clean wiring and documentation
+Not included in V1
+- Camera
+- Autonomous driving
+- BLDC motor control
+- Custom PCB
+
+Those may be explored in later versions after the first prototype works reliably.
+
+## Software Features
+
+Motor Control
+- Forward
+- Reverse
+- Left turn
+- Right turn
+- Stop
+- PWM speed control
+Telemetry
+- Battery voltage (and voltage sag)
+- Current draw (incl. motor inrush)
+- Estimated power
+- PWM duty cycle
+- Distance sensor data (acceleration, speed, distance)
+- System state
+- Fault state
+- Fault Handling
+
+DriveWire includes a basic embedded fault state machine.
+
+Planned states:
+
+NORMAL
+WARNING
+FAULT
+SAFE_SHUTDOWN
+
+Example fault conditions:
+
+Low battery voltage
+Overcurrent event
+Communication timeout
+Emergency stop
+Invalid control command
