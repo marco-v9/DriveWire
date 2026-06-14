@@ -103,3 +103,9 @@ Communication timeout
 Emergency stop
 
 Invalid control command
+
+
+# Author
+Marco Volpini
+Electrical Engineering Student
+University of Waterloo
