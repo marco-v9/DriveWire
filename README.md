@@ -106,6 +106,8 @@ Invalid control command
 
 
 # Author
-Marco Volpini
+### Marco Volpini
+
 Electrical Engineering Student
+
 University of Waterloo
