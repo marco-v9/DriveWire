@@ -7,7 +7,7 @@ DriveWire V1 is a scaled down electric‑vehicle (EV) platform built to explore 
 [Build Log](https://github.com/marco-v9/DriveWire/blob/main/BuildLog.md)
 
 <p align="center">
-  <img src="Images/DriveWireStatus06.29.jpg" width="500">
+  <img src="Images/DriveWireStatus06.29.jpg" width="200">
 </p>
 
 
