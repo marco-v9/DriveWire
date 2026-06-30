@@ -7,3 +7,5 @@ This is the most mechanical part of the system. Assembling the chassis included 
 </p>
 
 Chassis as completely built. 
+
+Battery pack mounted to underside of chassis for lower centre of gravity. 
