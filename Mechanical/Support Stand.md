@@ -7,7 +7,7 @@ I am creating this stand using SolidWorks Premium 2024, with intention of 3D pri
 On July 1st, I began modelling the stand. I got to this point: 
 
 <p align="center">
-  <img src="Images/DriveWire SolidWorks Stand July 1.png" width="200">
+  <img src="Images/DriveWire SolidWorks Stand July 1.png" width="300">
 </p>
 
 I believe I need to adjust the width of the two supports, as they will be under significant straign. I will try going from 0.8cm x 0.25cm to 0.8cm x 0.5cm in my next modelling session. I should probably fillet them as well for better sturdiness. 
