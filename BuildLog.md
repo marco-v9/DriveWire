@@ -25,3 +25,7 @@ I now have a bug where one motor functions perfectly as expected, but the other 
 <p align="center">
   <img src="Images/DriveWireStatus06.29.jpg" width="200">
 </p>
+
+<p align="center">
+  <img src="Images/SolidWorksStandDWName.png" width="300">
+</p>
