@@ -11,3 +11,11 @@ On July 1st, I began modelling the stand. I got to this point:
 </p>
 
 I believe I need to adjust the width of the two supports, as they will be under significant straign. I will try going from 0.8cm x 0.25cm to 0.8cm x 0.5cm in my next modelling session. I should probably fillet them as well for better sturdiness. 
+
+
+Later on July 1st, I also added a custom DriveWire engraving onto the base of the stand, and increased the width of the supports to 0.8cm x 0.6cm for extra robustness. Here is the image of the updates:
+
+<p align="center">
+  <img src="Images/SolidWorksStandDWName.png" width="300">
+</p>
+
