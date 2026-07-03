@@ -19,3 +19,10 @@ Later on July 1st, I also added a custom DriveWire engraving onto the base of th
   <img src="Images/SolidWorksStandDWName.png" width="300">
 </p>
 
+On July 2nd, I decided to widen the base and use four supports instead of two for extra sturdiness. I lowered the height of the base to 1.6 cm still at a 20 degree incline to save material without costing much stability (base is very wide, a bit of height is less relevant to stability). 
+
+On July 3rd, I used reference planes to sketch and rib the top of each support. I need to confirm if the 3D printer will handle this ok, but this may be the final design: 
+
+<p align="center">
+  <img src="Images/DriveWireStandFinal.png" width="300">
+</p>
