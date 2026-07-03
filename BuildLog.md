@@ -1,6 +1,6 @@
 ## June 12th
 
-All parts came in. Assembed mechanical [chassis](https://github.com/marco-v9/DriveWire/blob/main/Chassis.md). 
+All parts came in. Assembled mechanical [chassis](https://github.com/marco-v9/DriveWire/blob/main/Chassis.md). 
 
 ## June 13th
 
