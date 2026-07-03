@@ -33,7 +33,7 @@ On July 3rd, I used reference planes to sketch and rib the top of each support. 
 ## 3D Printing
 Sliced the .stl file of my stand, and chose supports off to hopefully avoid scaring the small details in the text and overhangs. 
 
-Using black PLA, I began printing:
+Used black PLA, on the Raise3D E2 printer. Estimated print time is 9 hours. Orientation is flat on base. 
 
 <p align="center">
   <img src="../Images/3DPrinterDWCropped.JPG" width="450">
