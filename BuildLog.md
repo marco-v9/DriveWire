@@ -30,5 +30,5 @@ I now have a bug where one motor functions perfectly as expected, but the other 
 I learned SolidWorks with the goal of 3D printing a professional demo stand for DriveWire. I need the wheels to be suspended off the ground so that I can debug and demo properly. By July 3rd, using reference planes, sketch tools, and the rib feature, along with basic structural analysis, this is the stand that I produced: 
 
 <p align="center">
-  <img src="Images/SolidWorksStandFinal.png" width="500">
+  <img src="Images/DriveWireStandFinal.png" width="500">
 </p>
