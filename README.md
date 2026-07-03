@@ -31,7 +31,7 @@ High-level architecture of the DriveWire V1 platform.
 | Component | Purpose |
 |------------|------------|
 | ESP32-S3 DevKitC-1 N8R8 | Main microcontroller |
-| Polulu DRV8833 | Controls left and right motors |
+| Pololu DRV8833 | Controls left and right motors |
 | 2x DC Gear Motors | Vehicle propulsion |
 | 4x AA Battery Pack | Motor power source |
 | USB Power Bank | ESP32 power source |
