@@ -42,7 +42,7 @@ High-level architecture of the DriveWire V1 platform.
   <img src="Images/Components.jpg" width="500">
 </p>
 
-Some components for the inital V1 build (exluding tools). 
+Some components for the initial V1 build (exluding tools). 
 
 ## Current V1 Scope
 The first version focuses on building a reliable 2WD rover with phone/browser control and basic telemetry.
