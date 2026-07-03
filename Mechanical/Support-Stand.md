@@ -36,5 +36,5 @@ Sliced the .stl file of my stand, and chose supports off to hopefully avoid scar
 Using black PLA, I began printing:
 
 <p align="center">
-  <img src="../Images/3DPrinterDWCropped.JPG" width="600">
+  <img src="../Images/3DPrinterDWCropped.JPG" width="450">
 </p>
