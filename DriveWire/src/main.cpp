@@ -2,9 +2,9 @@
 #include <Wire.h>
 #include <Adafruit_INA219.h>
 
-// =====================
+
 // Pin assignments
-// =====================
+
 
 // Motor B
 const int BIN1 = 10;
@@ -30,14 +30,13 @@ const float DIVIDER_SCALE = (R1 + R2) / R2;
 // Motor PWM settings
 const int PWM_MIN_TEST = 140;   // low-ish duty
 const int PWM_MED_TEST = 160;  // medium duty
-const int PWM_MAX_SAFE = 180;  // don't go cursed full send yet
+const int PWM_MAX_SAFE = 180;  // safe upper limit
 
 Adafruit_INA219 ina219;
 bool ina219_ok = false;
 
-// =====================
+
 // Helpers
-// =====================
 
 void motorStop()
 {
@@ -102,7 +101,7 @@ void drive(int leftPWM, int rightPWM)
   // For now assuming:
   // Motor A = left motor
   // Motor B = right motor
-  // If steering is backwards later, we just flip signs.
+  // If steering is backwards later, flip
   setMotorA(leftPWM);
   setMotorB(rightPWM);
 }
@@ -230,9 +229,9 @@ void printHelp()
   Serial.println();
 }
 
-// =====================
+
 // Setup / loop
-// =====================
+
 
 void setup()
 {
