@@ -24,5 +24,5 @@ On July 2nd, I decided to widen the base and use four supports instead of two fo
 On July 3rd, I used reference planes to sketch and rib the top of each support. I need to confirm if the 3D printer will handle this ok, but this may be the final design: 
 
 <p align="center">
-  <img src="../Images/DriveWireStandFinal.png" width="500">
+  <img src="../Images/DriveWireStandFinal.png" width="800">
 </p>
