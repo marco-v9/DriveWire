@@ -23,9 +23,12 @@ Ran into an issue where there was an audible buzzing, and no motor movement when
 I now have a bug where one motor functions perfectly as expected, but the other is not responding to any inputs. I have two dual motor driver boards, so i tested between the two. I got slightly different results, but neither perfectly drove both motors. I still have to go through some more debugging, but at this point I am suspicious of the motor driver board. 
 
 <p align="center">
-  <img src="Images/DriveWireStatus06.29.jpg" width="200">
+  <img src="Images/DriveWireStatus06.29.jpg" width="300">
 </p>
 
+# July 1 - July 3
+I learned SolidWorks with the goal of 3D printing a professional demo stand for DriveWire. I need the wheels to be suspended off the ground so that I can debug and demo properly. By July 3rd, using reference planes, sketch tools, and the rib feature, along with basic structural analysis, this is the stand that I produced: 
+
 <p align="center">
-  <img src="Images/SolidWorksStandDWName.png" width="300">
+  <img src="Images/SolidWorksStandFinal.png" width="500">
 </p>
