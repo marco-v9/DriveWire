@@ -40,10 +40,10 @@ Also sliced design, and started 3D printing process using black PLA on the Raise
 </p>
 
 # July 6
-3D printer error occured, and print stopped early. I restarted the print and it seems to be going well so far. Here is an image of the progress: 
+3D printer error occured, and print stopped early. I restarted the print and it is going well so far and is 83.5% complete. Here is an image of the progress: 
 
 <p align="center">
   <img src="Images/DWStandPrinting.jpg" width="450">
 </p>
 
-I noticed the bottom corners lifting slightly due to shrinkage during cooling. The part will likely be functional, but for future iterations I will explore solutions such as increased temperature on the heating bed, use of brim, and other print settings to improve first layer adhesion. 
+I noticed the bottom corners lifting slightly due to shrinkage during cooling. The part will likely be functional, but for future iterations I will explore solutions such as increased temperature on the heating bed (was 65 degrees for this print), use of brim, and other print settings to improve first layer adhesion. 
