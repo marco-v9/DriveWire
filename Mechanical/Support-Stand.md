@@ -38,3 +38,9 @@ Used black PLA, on the Raise3D E2 printer. Estimated print time is 9 hours. Orie
 <p align="center">
   <img src="../Images/3DPrinterDWCropped.JPG" width="450">
 </p>
+
+A printing error meant I had to restart the print. The bottom corners are lifting slightly due to shrinkage during cooling. The part will likely be functional, but for future iterations I will explore solutions such as increased temperature on the heating bed (was 65 degrees for this print), use of brim, and other print settings to improve first layer adhesion.
+
+<p align="center">
+  <img src="../Images/stand-printing.gif" width="500" alt="DriveWire support stand 3D printing">
+</p>
