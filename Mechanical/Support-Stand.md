@@ -44,3 +44,9 @@ A printing error meant I had to restart the print. The bottom corners are liftin
 <p align="center">
   <img src="../Images/stand-printing.gif" width="500" alt="DriveWire support stand 3D printing">
 </p>
+
+On July 7th, I was able to pick up the successful print: 
+
+<p align="center">
+  <img src="../Images/DWStandPrintOutside.jpg" width="600" alt="DriveWire printed stand product">
+</p>
