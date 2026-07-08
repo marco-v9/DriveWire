@@ -33,11 +33,7 @@ I learned SolidWorks with the goal of 3D printing a professional demo [support s
   <img src="Images/DriveWireStandFinal.png" width="500">
 </p>
 
-Also sliced design, and started 3D printing process using black PLA on the Raise3D E2 printer. Supports off to avoid scarring small details, and a 9 hour estimated print time. Here is the printer getting started: 
-
-<p align="center">
-  <img src="Images/3DPrinterDWCropped.JPG" width="350">
-</p>
+Also sliced design, and started 3D printing process using black PLA on the Raise3D E2 printer. Supports off to avoid scarring small details, and a 9 hour estimated print time. 
 
 # July 6
 3D printer error occured, and print stopped early. I restarted the print and it is going well so far and is 83.5% complete. Here is an image of the progress: 
