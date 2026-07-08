@@ -47,3 +47,12 @@ Also sliced design, and started 3D printing process using black PLA on the Raise
 </p>
 
 I noticed the bottom corners lifting slightly due to shrinkage during cooling. The part will likely be functional, but for future iterations I will explore solutions such as increased temperature on the heating bed (was 65 degrees for this print), use of brim, and other print settings to improve first layer adhesion. 
+
+# July 7th
+I was able to pick up the successful print for the stand: 
+
+<p align="center">
+  <img src="Images/DWStandPrintOutside.jpg" width="600" alt="DriveWire printed stand product">
+</p>
+
+After testing, the chassis sits perfectly mounted on the stand and seems extremely stable. This will become the testbench where I can continue the debugging and bring-up process. Next step is to debug one motor not recieving power. 
