@@ -6,7 +6,7 @@ I now have a bug where one motor functions perfectly as expected, but the other 
 
 ## July 7: Only one motor recieving power
 
-Debugging extended video: (DriveWire V1 Debugging - Motor Power Issues)[https://youtu.be/DzpZYJx54m0?si=vVjL2RTWoly1Th7c]
+Debugging extended video: [DriveWire V1 Debugging - Motor Power Issues](https://youtu.be/DzpZYJx54m0?si=vVjL2RTWoly1Th7c)
 
 In previous tests, I confirmed that both motors work, and that the 22 AWG automotive wire and soldered joints to the motor terminals also work.
 
