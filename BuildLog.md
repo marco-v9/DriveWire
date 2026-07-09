@@ -81,3 +81,11 @@ For the right turn command, R, the left wheel spins backward, which suggests its
 For the left turn command, L, the right wheel still spins backward, while the left wheel spins forward. The left wheel behavior appears to be an inverted polarity issue, but the right wheel not changing direction between L and R suggests that there may also be a firmware mapping or command logic issue.
 
 The next debugging step is to verify the motor direction mapping in firmware and create a simple truth table for each command, showing the expected and actual direction of each wheel.
+
+| Command | Expected Left | Expected Right | Actual Left | Actual Right |
+| ------- | ------------- | -------------- | ----------- | ------------ |
+| F       | forward       | forward        | forward     | forward      |
+| B       | backward      | backward       | backward    | backward     |
+| L       | backward      | forward        | forward     | backward     |
+| R       | forward       | backward       | backward    | backward     |
+
