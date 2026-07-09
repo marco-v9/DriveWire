@@ -55,7 +55,7 @@ After testing, the chassis sits perfectly mounted on the stand and seems extreme
 
 # July 8th
 Began debugging the issue where one motor isn't recieving power. 
-Debugging extended video: [DriveWire V1 Debugging - Motor Power Issues](https://youtu.be/DzpZYJx54m0?si=vVjL2RTWoly1Th7c)
+Debugging extended video: [DriveWire V1 Debugging - Motor Power Issues](https://youtu.be/vDU9MoDfNq8?si=B3OYoYzJ7QpWY6p5)
 
 During previous tests, I confirmed that both DC motors function correctly, and that the 22 AWG automotive wire and soldered motor terminal connections are not the source of the issue.
 
