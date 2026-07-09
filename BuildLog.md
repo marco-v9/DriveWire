@@ -54,18 +54,30 @@ I was able to pick up the successful print for the stand:
 After testing, the chassis sits perfectly mounted on the stand and seems extremely stable. This will become the testbench where I can continue the debugging and bring-up process. Next step is to debug one motor not recieving power. 
 
 # July 8th
-Began debugging the issue where one motor isn't recieving power. In previous tests, I confirmed that both motors work, and that the 22 AWG automotive wire and soldered joints to the motor terminals also work. 
+Began debugging the issue where one motor isn't recieving power. 
+Debugging extended video: [DriveWire V1 Debugging - Motor Power Issues](https://youtu.be/DzpZYJx54m0?si=vVjL2RTWoly1Th7c)
 
-I believed the issue was related to the dual motor driver board. To isolate the issue, I decided to first swap the imputs to the motor driver, and see what behavior changes. Then swap the outputs and see what behavior changes. This will determine if the issue is with the signals getting to the board from the ESP32, or if the issue happens within the board, affecting the output. 
+During previous tests, I confirmed that both DC motors function correctly, and that the 22 AWG automotive wire and soldered motor terminal connections are not the source of the issue.
 
-Before beginning the debugging process, only the left motor was working. But it's polarity was backwards to what the firmware was commanding. Upon swapping the inputs, all that changed was the polarity of the left motor. The right motor remained off. This is expected behavior if the inputs are working. So now the focus falls on the output. 
+The suspected failure point was the dual motor driver board. To isolate the issue, I tested whether the fault followed the ESP32 control inputs or stayed with the motor driver output channel.
 
-I swapped the output, and the left motor would no longer work, but the right motor now started working with reversed polarity. This confirms the issue is within the board. 
+Before debugging, only the left motor was receiving power. However, its polarity was reversed relative to the firmware command.
 
-I inspected the board carefully, but I can't see a reason for this to be happening. Maybe an issue with the H bridge. There are no solder bridges or anything like that. 
+First, I swapped the motor driver input signals. After this change, the left motor still ran, but its polarity changed. The right motor remained off. This suggested that the ESP32 control signals were not the main issue, since changing the input mapping affected the working motor but did not restore the inactive motor.
 
-For now, I added in the backup dual motor driver board which also only has one fully functional output, and wired it in parallel to the other motor board. They both share the same VCC battery voltage (~6.24 V currently) in parallel. And common grounds are shared. One board now drives one motor, and the other drives the other. 
+Next, I swapped the motor outputs. After swapping the outputs, the left motor no longer worked, while the right motor began working with reversed polarity. This confirmed that the fault stayed with one output channel of the motor driver board, rather than following the motor, wiring, or ESP32 control signals.
 
-Both wheels are now spinning, and the forward, reverse and pulse commands all function exactly as intended. 
+I inspected the driver board visually, but did not find any obvious solder bridges or damaged connections. The issue may be internal to the H-bridge or motor driver IC.
 
-The turning commands on the other hand are producing strange results. The right turn command, R, spins the left wheel backward (seems polarity is flipped with this one) but the right wheel also goes backward. Then for a left turn, the right wheel goes backward still (this is correct, but no change in direction between L and R commands is very odd), and the left wheel goes forward, which again indicates the left wheel logic is simply wrong polarity, but otherwise working. This is the next thing to debug. 
+As a temporary workaround, I added the backup dual motor driver board. This second board also appears to have only one fully functional output channel, so each board is now driving one motor using its working channel. Both boards are powered from the same motor supply rail, which was approximately 6.24 V during testing, and both boards share a common ground with the ESP32.
+
+With this setup, both wheels now spin correctly, and the forward, reverse, and pulse commands function as intended.
+
+### New bug discovered: 
+The turning commands are currently producing incorrect behavior.
+
+For the right turn command, R, the left wheel spins backward, which suggests its polarity or logic is inverted. However, the right wheel also spins backward.
+
+For the left turn command, L, the right wheel still spins backward, while the left wheel spins forward. The left wheel behavior appears to be an inverted polarity issue, but the right wheel not changing direction between L and R suggests that there may also be a firmware mapping or command logic issue.
+
+The next debugging step is to verify the motor direction mapping in firmware and create a simple truth table for each command, showing the expected and actual direction of each wheel.
