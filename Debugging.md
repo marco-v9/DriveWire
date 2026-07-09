@@ -6,6 +6,8 @@ I now have a bug where one motor functions perfectly as expected, but the other 
 
 ## July 7: Only one motor recieving power
 
+Debugging extended video: (DriveWire V1 Debugging - Motor Power Issues)[https://youtu.be/DzpZYJx54m0?si=vVjL2RTWoly1Th7c]
+
 In previous tests, I confirmed that both motors work, and that the 22 AWG automotive wire and soldered joints to the motor terminals also work.
 
 I believed the issue was related to the dual motor driver board. To isolate the issue, I decided to first swap the imputs to the motor driver, and see what behavior changes. Then swap the outputs and see what behavior changes. This will determine if the issue is with the signals getting to the board from the ESP32, or if the issue happens within the board, affecting the output.
