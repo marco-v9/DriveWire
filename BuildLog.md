@@ -89,3 +89,9 @@ The next debugging step is to verify the motor direction mapping in firmware and
 | L       | backward      | forward        | forward     | backward     |
 | R       | forward       | backward       | backward    | backward     |
 
+
+# July 20th
+I designed a first version of the schematic of the main battery power architecture in Altium. 
+<p align="center">
+  <img src="Images/Battery Power Circuit Schematic Jul 20.png" width="300">
+</p>
