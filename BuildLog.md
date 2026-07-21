@@ -92,6 +92,15 @@ The next debugging step is to verify the motor direction mapping in firmware and
 
 # July 20th
 I designed a first version of the schematic of the main battery power architecture in Altium. 
+
 <p align="center">
   <img src="Images/Battery Power Circuit Schematic Jul 20.png" width="500">
+</p>
+
+Battery power comes in through the 2-pin screw terminal connector rated for 300 V and 12 A as per UL standards, with 20mOhm contact resistance. The negative terminal goes to ground and the positive terminal immediately goes to the main fuse. 
+
+For now, I chose the 3568 Keystone fuse holder while planning on using a 5 A MINI Blade Fuse from Littelfuse, rated for 32 V DC. Here is the TCC curve from the spec sheet: 
+
+<p align="center">
+  <img src="Images/TCC curve 5A fuse.png" width="400">
 </p>
