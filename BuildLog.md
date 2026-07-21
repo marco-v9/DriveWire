@@ -91,7 +91,7 @@ The next debugging step is to verify the motor direction mapping in firmware and
 
 
 # July 20th
-I designed a first version of the schematic of the main battery power architecture in Altium. 
+I designed a first version of the schematic of the main battery power architecture in Altium for the first DriveWire custom PCB. 
 
 <p align="center">
   <img src="Images/Battery Power Circuit Schematic Jul 20.png" width="500">
@@ -99,8 +99,16 @@ I designed a first version of the schematic of the main battery power architectu
 
 Battery power comes in through the 2-pin screw terminal connector rated for 300 V and 12 A as per UL standards, with 20mOhm contact resistance. The negative terminal goes to ground and the positive terminal immediately goes to the main fuse. 
 
-For now, I chose the 3568 Keystone fuse holder while planning on using a 5 A MINI Blade Fuse from Littelfuse, rated for 32 V DC. Here is the TCC curve from the spec sheet: 
+For now, I chose the 3568 Keystone fuse holder while planning on using a 5 A MINI Blade Fuse from Littelfuse, rated for 32 V DC. Here is the TCC curve from the spec sheet (looking at the 5 A curve): 
 
 <p align="center">
-  <img src="Images/TCC curve 5A fuse.png" width="400">
+  <img src="Images/TCC curve 5A fuse.png" width="500">
 </p>
+
+Then the fused battery voltage is fed into the drain of a AOD4185 PMOS. This MOSFET is being used for reverse polarity protection, if the battery were to be connected the wrong way. It works by connecting its gate to ground, so that if battery voltage is connected properly, it brings VD high, and allows current to flow through the transistor's body diode to bring up the voltage at the source, VS. As the source voltage increases via the body diode, |VGS| increases, which forms the low resistance channel allowing current to then properly flow through. If the battery was connected the wrong way initially, VD would be negative VBAT, and then the body diode would be reverse biased and no current would flow through to change VS. 
+
+After the reverse polarity protection, I added one more AOD4185 PMOS for the main mechanical power switch. This is because the slider switches cannot handle full motor current continuously, so instead the mosfet handles the current and the SPDT switch controls gate biasing. When the SPDT switch is switched to ground, VGS is at its largest magnitude and the mosfet conducts current, however when the switch is switched to connect to the source, VGS is zero, and no current flows, shutting the circuit power off. 
+
+I am currently considering adding the ability for the ESP32 WROOM module to shut down the main power electronically. 
+
+Then we get to the main VBAT bus, which has just a bit under full battery voltage (with minor losses from the circuitry above), protected from major short circuit currents through the main fuse, reverse polarity connections through the reverse connected PMOS, and controlled by a main switch through a second PMOS. 
