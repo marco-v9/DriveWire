@@ -4,7 +4,7 @@ All parts came in. Assembled mechanical [chassis](https://github.com/marco-v9/Dr
 
 ## June 13th
 
-Ran basic code on ESP32 board to show it is communicating properly with my computer. 
+Ran basic code on ESP32 board to show it is communicating properly with my computer over serial. 
 
 ## June 14th
 
