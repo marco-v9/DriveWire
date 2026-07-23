@@ -7,7 +7,7 @@
 | 2WD robot chassis | Mechanical platform | Assembled |
 | DC gear motors | Propulsion | Wired |
 | AA battery pack | Motor power | In use |
-| Adafruit current sensor | Motor current measurement | Soldered |
-| Adafruit ToF sensor | Distance sensing | Soldered, not yet integrated |
+| Adafruit current sensor | Motor current measurement | Soldered, in use |
+| Adafruit ToF sensor | Distance sensing | Soldered, in use |
 | 22 AWG automotive wire | Motor and power wiring | In use |
 | Heat shrink tubing | Joint insulation/strain relief | In use |
