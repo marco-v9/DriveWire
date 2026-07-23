@@ -112,3 +112,15 @@ After the reverse polarity protection, I added one more AOD4185 PMOS for the mai
 I am currently considering adding the ability for the ESP32 WROOM module to shut down the main power electronically. 
 
 Then we get to the main VBAT bus, which has just a bit under full battery voltage (with minor losses from the circuitry above), protected from major short circuit currents through the main fuse, reverse polarity connections through the reverse connected PMOS, and controlled by a main switch through a second PMOS. 
+
+
+# July 23rd
+Wired the ToF distance sensor board (VL53L1X board). 
+
+<p align="center">
+  <img src="Images/Wired ToF.JPG" width="400">
+</p>
+
+Secured the sensor to the front of the chassis facing forward to detect objects in front of DriveWire. Used a temporary adhesive, which has the sensor secured in the appropriate position, however I am realizing a 3D printed bracket to hold the sensor board in the future would be a much more satisfying solution.
+
+I will now begin working on the firmware to test the sensor. 
