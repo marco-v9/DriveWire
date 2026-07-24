@@ -131,3 +131,10 @@ Later I finished writing a simple test file stored in the project as a .txt file
   <img src="Images/ToF_test_readings_serial.png" width="600">
 </p>
 
+I also tested the maximum range with the physical hardware: 
+
+<p align="center">
+  <img src="Images/ToF_test_maxrange.png" width="600">
+</p>
+
+It seems to be around 130 cm, which is plenty for our use cases. DriveWire should be able to brake in that distance if an object is detected in its path, though more testing will need to be done to confirm. 
