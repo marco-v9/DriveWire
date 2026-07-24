@@ -128,6 +128,6 @@ I will now begin working on the firmware to test the sensor.
 Later I finished writing a simple test file stored in the project as a .txt file under the TestFiles folder. It prints distance in both mm and cm over serial taking measurements at a frequency of 1 Hz. Here are some of the readings from the test run: 
 
 <p align="center">
-  <img src="Images/ToF_test_readings_serial.png" width="400">
+  <img src="Images/ToF_test_readings_serial.png" width="600">
 </p>
 
