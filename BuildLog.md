@@ -139,4 +139,4 @@ I also tested the maximum range with the physical hardware:
 
 It seems to be around 130 cm, which is plenty for our use cases. DriveWire should be able to brake in that distance if an object is detected in its path, though more testing will need to be done to confirm. 
 
-A video of this process can be found (here)[https://youtube.com/shorts/BkFgAW3W1bs?feature=share].
+A video of this process can be found [here](https://youtube.com/shorts/BkFgAW3W1bs?feature=share).
