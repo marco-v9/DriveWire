@@ -124,3 +124,10 @@ Wired the ToF distance sensor board (VL53L1X board).
 Secured the sensor to the front of the chassis facing forward to detect objects in front of DriveWire. Used a temporary adhesive, which has the sensor secured in the appropriate position, however I am realizing a 3D printed bracket to hold the sensor board in the future would be a much more satisfying solution.
 
 I will now begin working on the firmware to test the sensor. 
+
+Later I finished writing a simple test file stored in the project as a .txt file under the TestFiles folder. It prints distance in both mm and cm over serial taking measurements at a frequency of 1 Hz. Here are some of the readings from the test run: 
+
+<p align="center">
+  <img src="Images/ToF_test_readings_serial.png" width="400">
+</p>
+
